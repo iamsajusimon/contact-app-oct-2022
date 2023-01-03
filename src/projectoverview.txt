@@ -1,0 +1,57 @@
+
+
+
+   Contact Management system [ CRUD Application Sysytem (Create , Read , Update , Delete)]
+
+   1. Create an angular project
+
+   2. Install bootstrap and fontawesome
+
+   3. Paste CDN link of fontawesome
+
+   4. Configure bootstrap and fontawesome in angular.json
+
+   5. Configure the google fonts
+
+   6. Create component needed for the project
+
+       * contactManager - display all contacts and manage them
+       * addContact     - add new contact 
+       * updateContact  - update existing contact
+       * viewContact    - view a particular contact 
+       * pageNotFound   - to display page not found
+       * navbar         - place its selector inside root component html page (make navbar visible on all pages)
+  
+   7. Set up the path for each component that we needed to display in webpage
+      
+       - Inside app-routing.module.ts , route array 
+       - Use router-outlet selector inside appComponent.html page 
+            ~ To view the requested component
+  
+   8. Design html page of each component       
+  
+   9. Set up the sserver Application  
+     
+       - Create server folder inside the project
+       - Create db.json file
+       - Open cmd from server folder
+            ~ Create package.json file - command: npm init
+            ~ Install json-server inside server folder
+            ~ Update package.json file, script as
+                . "start": "json-server --watch db.json --port 3000"
+            ~ To run server use command: npm start
+ 
+  10. Create Model for contacts and group
+     
+       - Create model folder in src folder
+       - Create myContact.ts file
+       - Create myGroup.ts
+
+  11. Create an angular service for making api call       
+  
+  12. To get http methods (get , post , pot , patch , Delete)
+     
+       - Import HttpClientModule in app.module.ts         
+       
+       - Dependency Inject HttpClient in api service ts file
+       
